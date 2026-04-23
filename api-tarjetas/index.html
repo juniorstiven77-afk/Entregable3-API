@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atractivos Turísticos de Colombia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Atractivos Turísticos Principales en Colombia</h1>
+    <p>Esta API esta diseñada para que encuentres los atractivos turísticos más destacados de Colombia y poder disfrutar de cada uno de ellos.</p>
+
+    <!-- BUSCADOR -->
+    <section class="buscador">
+      <h2>Busca tu atractivo turístico</h2>
+
+      <div class="buscador-box">
+        <input
+          type="text"
+          id="inputBusqueda"
+          placeholder="Ej: Monserrate, Tayrona, Cartagena..."
+          aria-label="Buscar atractivo turístico"
+        >
+        <button id="btnBuscar">Buscar</button>
+        <button id="btnLimpiar">Mostrar todos</button>
+      </div>
+    </section>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section id="atractivos" class="grid" aria-live="polite"></section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+<footer class="footer">
+  <div class="footer-contenedor">
+
+    <div class="footer-col">
+      <h3>Sobre el proyecto</h3>
+      <p>
+        Aplicación web desarrollada para consumir una API pública de
+        atractivos turísticos en Colombia. <br>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Equipo</h3>
+      <p><strong>Junior Stiven Moreno Gomez</strong><br>Desarrollador</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/colombia?igsh=MW9jeTNzMTFxYmJ3cQ==">Instagram</a></li>
+        <li><a href="https://www.facebook.com/share/1BT2KCjxES/?mibextid=wwXIfr">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@dinos_de_videos?_r=1&_t=ZS-95mUGNkBYOL">TikTok</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+   Diplomado en Desarrollo Web 
+  </div>
+</footer>
+</div>
+</body>
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(90deg, #1b5e20, #2e7d32);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  background: rgba(35, 204, 80, 0.685);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eaeaea;
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(rgba(0, 60, 0, 0.6), rgba(0, 60, 0, 0.6)),
+    url('img/fondo-colombia.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.buscador {
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  
+  /* Degradado de la Bandera de Colombia (Amarillo, Azul y Rojo) */
+  background: linear-gradient(
+    180deg, 
+    #FCD116 0%,   /* Amarillo */
+    #FCD116 45%, 
+    #003893 75%,  /* Azul */
+    #CE1126 100%  /* Rojo */
+  );
+}
+
+.buscador-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.buscador-box input {
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.buscador-box button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+#btnBuscar {
+  background: #2e7d32;
+}
+
+#btnLimpiar {
+  background: #1565c0;
+}
+
+.buscador-box button:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+}
+.footer {
+  background: #1b5e20;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-contenedor {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-col h3 {
+  margin-bottom: 10px;
+  color: #c8e6c9;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
