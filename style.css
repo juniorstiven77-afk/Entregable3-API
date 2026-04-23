@@ -195,3 +195,43 @@ body {
   border-top: 1px solid rgba(255,255,255,0.3);
   padding-top: 15px;
 }
+
+/* --- ESTILOS RESPONSIVE --- */
+
+/* Para tablets y celulares grandes (menos de 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px; /* Título más pequeño */
+  }
+
+  .buscador {
+    width: 95%; /* Que ocupe casi todo el ancho */
+    padding: 20px 15px;
+  }
+
+  .buscador-box {
+    flex-direction: column; /* Los botones e input se ponen uno sobre otro */
+    align-items: stretch;
+  }
+
+  .buscador-box input {
+    width: 100%; /* El input ocupa todo el ancho disponible */
+  }
+}
+
+/* Para celulares pequeños (menos de 480px) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Una sola tarjeta por fila */
+    padding: 15px;
+  }
+
+  .footer-contenedor {
+    grid-template-columns: 1fr; /* Columnas del footer una sobre otra */
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px 10px;
+  }
+}
